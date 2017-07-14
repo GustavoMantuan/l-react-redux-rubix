@@ -4,19 +4,22 @@ import compression from 'compression';
 import cookieParser from 'cookie-parser';
 
 import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-
 import routes from './src/routes';
 import {
   setupReducers,
-    applyMiddleware,
+  applyMiddleware,
   renderHTMLString,
 } from '@sketchpixy/rubix/lib/node/redux-router';
+
 import RubixAssetMiddleware from '@sketchpixy/rubix/lib/node/RubixAssetMiddleware';
 import promise from 'redux-promise';
-import createLogger from 'redux-logger';
+import { createLogger } from 'redux-logger';
 const logger = createLogger();
 import reducers from './src/redux/reducers';
+
+
+
+
 setupReducers(reducers);
 applyMiddleware(promise, logger);
 const port = process.env.PORT || 8081;

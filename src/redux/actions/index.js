@@ -1,5 +1,7 @@
-import greetings from './greetings';
+import fetchDataDonut from "./donutMorrisChart"
+import fetchDataRubixBar from "./rubixBarChart"
 
 module.exports = {
-  ...greetings,
+    ...fetchDataDonut,
+    ...fetchDataRubixBar
 };

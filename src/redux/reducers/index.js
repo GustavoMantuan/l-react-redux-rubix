@@ -1,5 +1,7 @@
-import greetings from './greetings';
+import donutChartMorris  from './donutMorrisChart';
+import rubixBarChar from './rubixBarChart';
 
 module.exports = {
-  ...greetings,
+    ...donutChartMorris,
+    ...rubixBarChar
 };

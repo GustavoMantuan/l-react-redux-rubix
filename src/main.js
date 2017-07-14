@@ -12,7 +12,7 @@ import render, {
 } from '@sketchpixy/rubix/lib/node/redux-router';
 
 import promise from 'redux-promise';
-import createLogger from 'redux-logger';
+import {createLogger} from 'redux-logger';
 const logger = createLogger();
 import reducers from './redux/reducers';
 
